@@ -294,9 +294,9 @@ var compile_json = function(rows){
     //  var options = {};
     //}
     // foldr options, version 2
-    if(row[2].match(/expand/)){
+    if(row[2].match(/(expand|open)/)){
       var foldr_mode = "active";
-    }else if(row[2].match(/collapse/)){
+    }else if(row[2].match(/(collapse|close)/)){
       var foldr_mode = "collapsed-subfoldr";
     }else{
       var foldr_mode = "";
